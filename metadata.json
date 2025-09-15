@@ -1,0 +1,5 @@
+{
+  "name": "PTNK ClubFinder",
+  "description": "A web application to help PTNK students find the most suitable clubs for them based on a series of personality and situational questions.",
+  "requestFramePermissions": []
+}
