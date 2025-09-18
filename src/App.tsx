@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { KEY_MAP, STATEMENTS_DATA, QUESTIONS_DATA, SUGGESTIONS } from './constants';
-import type { Statement, Question, Scores, AnswerState, Group, GroupKey } from './types';
-import FloatingShapes from './components/FloatingShapes';
-import StatementQuestion from './components/StatementQuestion';
-import ScenarioQuestion from './components/ScenarioQuestion';
-import Results from './components/Results';
+import { KEY_MAP, STATEMENTS_DATA, QUESTIONS_DATA, SUGGESTIONS } from '../constants.ts';
+import type { Statement, Question, Scores, AnswerState, Group, GroupKey } from '../types.ts';
+import FloatingShapes from '@/src/components/FloatingShapes.tsx';
+import StatementQuestion from '@/src/components/StatementQuestion.tsx';
+import ScenarioQuestion from '@/src/components/ScenarioQuestion.tsx';
+import Results from '@/src/components/Results.tsx';
 
 const App: React.FC = () => {
   const [shuffledStatements, setShuffledStatements] = useState<Statement[]>([]);

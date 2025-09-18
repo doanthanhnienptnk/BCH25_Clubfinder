@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import type { Question } from '../types';
+import type { Question } from '../../types.ts';
 
 interface ScenarioQuestionProps {
   question: Question;

@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>PTNK ClubFinder</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/assets/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                DEFAULT: '#292A72', // Dark Blue/Indigo
-              },
-              accent: {
-                DEFAULT: '#EA3E49', // Red/Coral
-              },
-            },
-            fontFamily: {
-              sans: ['"Be Vietnam Pro"', 'sans-serif'],
-            },
-          },
-        },
-      };
-    </script>
     <style>
-      .shape-float {
-        animation: float 10s ease-in-out infinite alternate;
-      }
-      @keyframes float {
-        from{transform:translateY(0) rotate(0);}
-        to{transform:translateY(-30px) rotate(20deg);}
-      }
+        .gradient-bg {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6, #34d399);
+            background-size: 400% 400%;
+            animation: gradientShift 18s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        .shape-float {
+            animation: float 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0) rotate(0);
+            }
+            to {
+                transform: translateY(-30px) rotate(20deg);
+            }
+        }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
-  }
-}
-</script>
 </head>
-  <body class="font-sans">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body class="font-sans">
+<div id="root"></div>
+<script type="module" src="/src/index.tsx"></script>
+</body>
 </html>

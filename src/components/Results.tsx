@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import type { Scores, GroupKey } from '../types';
-import { SUGGESTIONS } from '../constants';
+import type { Scores, GroupKey } from '../../types.ts';
+import { SUGGESTIONS } from '../../constants.ts';
 
 interface ResultsProps {
   results: Scores;

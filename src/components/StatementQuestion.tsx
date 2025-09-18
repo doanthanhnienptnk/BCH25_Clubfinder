@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import type { Statement } from '../types';
+import type { Statement } from '../../types.ts';
 
 interface StatementQuestionProps {
   statement: Statement;
