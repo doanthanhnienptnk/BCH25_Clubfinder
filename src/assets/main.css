@@ -1,8 +1,9 @@
 @import 'tailwindcss';
+@import '@fontsource/be-vietnam-pro';
 
 @theme {
-    --font-sans: 'Be Vietnam Pro', sans-serif;
-    --font-serif: 'Be Vietnam Pro', serif;
-    --color-primary: #292A72;
-    --color-accent: #EA3E49;
+  --font-sans: 'Be Vietnam Pro Medium', sans-serif;
+  --font-serif: 'Be Vietnam Pro Medium', serif;
+  --color-primary: var(--color-blue-900);
+  --color-accent: var(--color-blue-900);
 }
