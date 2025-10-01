@@ -6,6 +6,7 @@ import Results from '@/src/components/Results.tsx'
 import ScenarioQuestion from '@/src/components/ScenarioQuestion.tsx'
 import StatementQuestion from '@/src/components/StatementQuestion.tsx'
 import { KEY_MAP, QUESTIONS_DATA, STATEMENTS_DATA } from '../constants.ts'
+import ptnkLogo from '../public/ptnk-logo.jpg?url'
 
 const App: React.FC = () => {
   const [shuffledStatements, setShuffledStatements] = useState<Statement[]>([])
@@ -89,7 +90,13 @@ const App: React.FC = () => {
       className="bg-primary min-h-screen text-slate-800 flex items-center justify-center p-4 md:p-6 relative overflow-hidden"
     >
       <FloatingShapes />
-      <main className="w-full max-w-4xl bg-white rounded-2xl p-6 md:p-8 shadow-2xl z-10">
+      <main className="w-full max-w-4xl bg-white rounded-2xl p-6 md:p-8 shadow-2xl z-10 relative">
+        <div className="absolute top-0 left-0 w-full h-full grid grid-rows-3 gap-y-auto items-center justify-center z-50 pointer-events-none">
+          <img src={ptnkLogo} alt="Logo PTNK" className="w-2/3 aspect-square object-cover rounded-full opacity-30 mx-auto" />
+          <img src={ptnkLogo} alt="Logo PTNK" className="w-2/3 aspect-square object-cover rounded-full opacity-30 mx-auto" />
+          <img src={ptnkLogo} alt="Logo PTNK" className="w-2/3 aspect-square object-cover rounded-full opacity-30 mx-auto" />
+        </div>
+
         <header className="mb-8 text-center">
           <PtnkInformation />
           <h1 className="text-2xl md:text-3xl font-bold text-primary mt-4">
